@@ -1,0 +1,392 @@
+html {
+    scroll-behavior: smooth;
+    border: 10px solid black;
+   
+}
+#ty {
+    cursor: pointer;
+    background: transparent;
+}
+span {
+    background: green;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.navbar {
+    width: 95.5%;
+    height: 100px;
+    margin: auto;
+    background-color: black;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -0px;
+     transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.imgcon {
+    width: 100%;
+    display: flex; 
+}
+
+.img {
+    width: 689.9px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgk {
+    width: 900px;
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgy {
+    width: 1000px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+
+
+button {
+    color: chartreuse;
+    width: 200px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: solid green;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+span {
+    background: green;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+@keyframes logoanimation {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#logo {
+    animation-name: logoanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.ok {
+    font-size: 70px;
+    color: darkorange;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 5px solid gold;
+    border-radius: 25px;
+    border-color: white;
+    box-shadow: 2px 2px 5px white;
+}
+
+#gimg {
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+
+}
+
+.about {
+    display: grid;
+}
+
+.lp {
+    position: absolute;
+    bottom: -190px;
+    center-align: center;
+    left: 40%;
+    font-size: 50px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.lm {
+    border: 10px solid darkorange;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.b {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui {
+    border: 10px solid darkorange;
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.tissa {
+    position: absolute;
+    bottom: -70px;
+    left: 5%;
+    color: red;
+    border: solid blue;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+
+span {
+    background: green;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+    transform: translateX(0);
+}
+
+button:hover {
+    border: none;
+}
+
+.s {
+    position: absolute;
+    bottom: -700px;
+    left: 50%;
+    font-size: 80px;
+}
+
+.zx {
+     position: absolute;
+     border: 10px solid greenyellow;
+    bottom: -700px;
+    left: 50%;
+    font-size: 40px;
+
+}
+
+.m {
+     position: absolute;
+    bottom: -1300px;
+    left: 50%;
+    font-size: 80px;
+}
+
+.zp {
+    position: absolute;
+     border: 10px solid greenyellow;
+    bottom: -1300px;
+    left: 50%;
+    font-size: 40px;
+}
+
+.k {
+    position: absolute;
+    bottom: -1700px;
+    left: 50%;
+    font-size: 80px;
+}
+
+.zm {
+    position: absolute;
+     border: 10px solid greenyellow;
+    bottom: -1700px;
+    left: 50%;
+    font-size: 40px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+#ff {
+    border: 10px solid darkorange;
+    width: 500px;
+    border-radius: 25px;
+    text-shadow: black;
+    cursor: pointer;
+}
+#fg {
+    margin-top: 70px;
+    display: flex;
+    text-align: center;
+}
+#fs {
+    width: 100px;
+  margin-left: 500px;
+  margin-top: -360px;
+}
+#fv {
+    margin-top: -360px;
+    margin-left: 1000px;
+}
+#fn {
+    margin-left: 500px;
+}
+#de {
+    width: 300px;
+    background-size: cover;
+}
+#man {
+    margin-left: 45px;
+    border: 2px solid black;
+    background: blue;
+    width: 210px;
+}
+#db {
+    width: 300px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+#vb {
+    margin-left: 80px;
+    margin-top: -20px;
+    border: 2px solid black;
+    background: red;
+    width: 150px;
+}
+#lm {
+    margin-left: 80px;
+    margin-top: -30px;
+    border: 2px solid black;
+    background: darkorange;
+    width: 125px;
+    animation:alternate-reverse;
+    animation-play-state: initial;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.5;
+}
+
+#v {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    margin-left: -70px;
+    border: 20px solid white;
+    margin-left: 30px;
+    border-radius: 0px;
+    background: black;
+  cursor: pointer;
+}
+#fk {
+   cursor: pointer;
+}
+#fn {
+    cursor: pointer;
+}
+#lm {
+    cursor: pointer;
+}
+#game {
+    text-align: center;
+    border: 10px solid red;
+    width: 500px;
+    border-radius: 25px;
+    margin-left: 400px;
+    cursor: pointer;
+}
